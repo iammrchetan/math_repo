@@ -5,8 +5,15 @@ use strict;
 use warnings;
 
 say "sum:\t".&add(5,8);
+say "difference:\t".&subtract(13-9);
+
 
 sub add{
 	my ($x, $y) = @_;
 	return ($x+$y);
+}
+
+sub subtract{
+	my ($x, $y) = @_;
+	return ($x-$y);
 }
