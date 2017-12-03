@@ -7,6 +7,7 @@ use warnings;
 say "sum:\t".&add(5,8);
 say "difference:\t".&subtract(13,9);
 say "multiply:\t".&multiply(13,5);
+say "divide:\t".&divide(15,3);
 
 sub add{
 	my ($x, $y) = @_;
@@ -21,4 +22,9 @@ sub subtract{
 sub multiply{
         my ($x, $y) = @_;
         return ($x*$y);
+}
+
+sub divide{
+	my ($x, $y)= @_;
+	return ($x/$y);
 }
